@@ -378,7 +378,7 @@ div.btn {
         margin-left: 25%;
         position: relative;
         letter-spacing: .2rem;
-        width: 300px;
+        width: 220px;
         text-align: start;
     }
     
@@ -408,6 +408,7 @@ div.btn {
     justify-content: center;
     align-items: center;
     text-wrap: wrap;
+    margin-left: 45px;
     }
 
     .scene {
@@ -416,7 +417,7 @@ div.btn {
     }
 
     .card {
-    width: 100%;
+    width: 95%;
     height: 80%;
     transition: 0.8s;
     margin: 5rem 2rem;
@@ -570,7 +571,7 @@ div.btn {
         position: absolute;
         top: 20rem;
         bottom: 0;
-        left: 50%;
+        left: 48%;
         width: 10px;
         background: #ccc;
         transform: translateX(-50%);
@@ -588,14 +589,12 @@ div.btn {
 .crd-hdn {
     display: none;
   }
-  
-  /* Animación entrada */
+
   .animate-fade-right {
     animation: fadeRight 1s forwards;
     display: block;
   }
   
-  /* Animación salida */
   .animate-fade-left {
     animation: fadeLeft 1s forwards;
   }
@@ -607,7 +606,7 @@ div.btn {
     }
     to {
       opacity: 1;
-      transform: translateX(0);
+      transform: translateX(37px);
     }
   }
   
