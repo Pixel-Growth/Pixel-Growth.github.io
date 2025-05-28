@@ -707,3 +707,58 @@ div.btn {
         }
     }
 }
+
+/** ASISTENTE IA **/
+
+.chat-button {
+    width: 60px;
+    height: 60px;
+}
+
+.chat-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.chat-box {
+    bottom: 90px;
+    right: 20px;
+    width: 360px;
+    max-height: 600px;
+}
+
+.chat-header {
+    font-size: 18px;
+}
+
+.chat-messages {
+    font-size: 1.7rem;
+}
+
+.chat-input input {
+    padding: 15px;
+    font-size: 15px;
+}
+
+.chat-input button {
+    padding: 14px 18px;
+}
+
+.chat-options button {
+    width: 100%;
+    padding: 14px;
+    margin: 8px 0;
+    font-size: 14px;
+    font-size: 1.5rem;
+}
+
+.input-group input {
+    width: 100%;
+    font-size: 14px;
+}
+
+.input-group button {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+}

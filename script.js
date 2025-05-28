@@ -284,7 +284,7 @@ function mostrarProductos() {
     div.style.padding = "10px";
     div.style.borderRadius = "8px";
     div.style.fontFamily = "Winky";
-    div.style.fontSize = "1.8rem";
+    div.style.fontSize = "1.3rem";
     div.textContent = `${producto.nombre} - $${producto.precio.toFixed(2)}`;
 
     const botonCarrito = document.createElement("button");

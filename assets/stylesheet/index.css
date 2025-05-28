@@ -1284,8 +1284,8 @@ body {
     background-color: var(--green);
     border: none;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -1293,19 +1293,21 @@ body {
     justify-content: center;
     z-index: 999;
 }
+
 .chat-icon {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     filter: invert(1);
 }
+
 .chat-box {
     position: fixed;
     font-family: "Kanit";
-    font-size: 2rem;
+    font-size: 1.5rem;
     bottom: 90px;
     right: 20px;
-    width: 360px;
-    max-height: 600px;
+    width: 85vw;
+    max-height: 500px;
     background: #ece5dd;
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
@@ -1315,6 +1317,7 @@ body {
     animation: slideUp 0.3s ease;
     z-index: 999;
 }
+
 @keyframes slideUp {
     from {
         transform: translateY(20px);
@@ -1325,73 +1328,84 @@ body {
         opacity: 1;
     }
 }
+
 .chat-header {
     background-color: #075e54;
     color: white;
     padding: 16px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 14px;
     font-family: "Skranji";
 }
+
 .chat-messages {
     flex: 1;
     padding: 16px;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+    font-size: 1.3rem;
 }
+
 .chat-input {
     display: flex;
     border-top: 1px solid #ccc;
     background-color: var(--crem);
 }
+
 .chat-input input {
     flex: 1;
     border: none;
-    padding: 14px;
-    font-size: 14px;
+    padding: 13px;
+    font-size: 10px;
 }
+
 .chat-input button {
     background-color: var(--green);
     color: white;
     border: none;
-    padding: 14px 18px;
+    padding: 10px 13px;
     cursor: pointer;
 }
+
 .chat-options button {
-    width: 100%;
-    padding: 14px;
+    width: 85%;
+    padding: 12px;
     margin: 8px 0;
     border: none;
     background-color: #dcf8c6;
     border-left: 5px solid var(--green);
     text-align: left;
-    font-size: 14px;
+    font-size: 11px;
     cursor: pointer;
     font-family: "Winky";
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
+
 .chat-options button:hover {
     background-color: #cdebb5;
 }
+
 .input-group {
     margin-top: 10px;
 }
+
 .input-group input {
-    width: 100%;
+    width: 90%;
     margin-bottom: 10px;
     padding: 10px;
-    font-size: 14px;
+    font-size: 11px;
     border: 1px solid #ccc;
     border-radius: 6px;
 }
+
 .input-group button {
     background-color: var(--green);
     color: white;
     border: none;
-    padding: 10px;
-    font-size: 14px;
-    width: 100%;
+    padding: 8px;
+    font-size: 12px;
+    width: 90%;
     cursor: pointer;
     border-radius: 6px;
 }
@@ -1422,5 +1436,3 @@ body {
     cursor: pointer;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
 }
-
-
