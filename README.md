@@ -5,7 +5,7 @@
 
 ---
 
-![portafolio-presentacion]([url=https://ibb.co/pHZvdbm][img]https://i.ibb.co/1CKfT7S/The-Mockup.png[/img][/url])
+![portafolio-presentacion](https://ibb.co/pHZvdbm)
 
 ---
 
