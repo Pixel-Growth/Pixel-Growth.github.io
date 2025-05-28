@@ -5,7 +5,7 @@
 
 ---
 
-![portafolio-presentacion](https://ibb.co/pHZvdbm)
+![portafolio-presentacion](https://raw.githubusercontent.com/Pixel-Growth/Pixel-Growth.github.io/bccfc8dab79f2faa9d046cb912442270f9baf8ce/The%20Mockup.png)
 
 ---
 
