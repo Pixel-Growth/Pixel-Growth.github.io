@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio | Mariana Arias Desarrolladora Web">
+    <meta name="robots" content="index,follow">
+
+    <title>Pixel Growth</title>
+
+    <!-- Librerías -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Hojas de estilo -->
+    <link rel="stylesheet" href="./assets/stylesheet/loader.css">
+    <link rel="stylesheet" href="./assets/stylesheet/index.css">
+    <link rel="stylesheet" href="./assets/stylesheet/tablet.css" media="screen and (min-width: 760px)">
+    <link rel="stylesheet" href="./assets/stylesheet/desktop.css" media="screen and (min-width: 980px)">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/Logo-Final-Pixel-Growht-Sin-Fondo__ico.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container--loader">
+        <div class="loader"></div>
+    </div>
+
+
+    <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+        <defs>
+            <style>
+                @keyframes rotate {
+                        0% {
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+                .out-top {
+                    animation: rotate 20s linear infinite;
+                    transform-origin: 13px 25px;
+                }
+                .in-top {
+                    animation: rotate 10s linear infinite;
+                    transform-origin: 13px 25px;
+                }
+                .out-bottom {
+                    animation: rotate 25s linear infinite;
+                    transform-origin: 84px 93px;
+                }
+                .in-bottom {
+                    animation: rotate 15s linear infinite;
+                    transform-origin: 84px 93px;
+                }
+            </style>
+        </defs>
+        <path fill="##081c15" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
+        <path fill="##081c15" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"/>
+        <path fill="##081c15" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"/>
+        <path fill="##081c15" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
+    </svg>
+
+    <div class="cart-container" id="cartContainer">
+                <div class="cart-header">
+                    <h2>Carrito</h2>
+                    <button class="close-cart" id="closeCart">✖</button>
+                </div>
+                <div class="cart-items" id="cartItems">
+                    <p>Tu carrito está vacío.</p>
+                </div>
+                <div class="cart-footer" id="cartFooter">
+                    <strong>Total:</strong> $<span id="cartTotal">0.00</span>
+                </div>
+            </div>
+
+    <header class="header">
+        <a href="#home">
+            <img src="assets/images/Logo-Final-Pixel-Growht-Sin-Fondo__ico.ico" alt="Logo" class="logo__header">
+        </a>
+        
+        <div class="cart-icon-container">
+            <img src="assets/images/shop-car.png" alt="Logo" class="logo__shop" id="cartToggle">
+            <span class="cart-count-bubble" id="cartCount">0</span>
+        </div>
+
+
+        <nav class="nav_menu not-active">
+            <a href="#home" class="active text-home">Home</a>
+            <a href="#sobrenoso" data-section="menu">Sobre nosotros</a>
+            <a href="#organizacion" data-section="menu">Organizacion</a>
+            <a href="#habilidades" data-section="menu">Habilidades</a>
+            <a href="#services" data-section="menu">Servicios</a>
+            <a href="#plans" data-section="menu">Planes</a>
+            <a href="#contacto" data-section="menu">Contacto</a>
+        </nav>
+
+        <div id="button" class="btn not-active">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section class="home" id="home" data-aos="fade-up">
+            <picture class="container_image-home" data-aos="zoom-in">
+                <img class="image_home" src="assets/images/image-home.png" alt="Ilustración mujer y plantas">
+            </picture>
+            
+            <div class="home_info">
+                <div class="container_text-info">
+                    <p class="home_text-1" data-section="home">Todo comienza con cada pixel</p>
+                    <p class="home_text-2">Pixel Growth</p>
+                </div>
+
+                <div>
+                    <p class="home_text-3 text-type" data-section="home">Grupo de desarrollo web</p>
+                </div>
+
+                <div class="container_parrafo-info">
+                    <p data-section="home">Somos una empresa enfocada en crear interfaces web visuales e 
+                        intuitivas. Nos apasiona convertir ideas en experiencias digitales atractivas que conecten con los usuarios y reflejen la identidad de cada marca. Trabajamos con detalle, creatividad y enfoque en la usabilidad para ayudarte a destacar en el entorno digital.</p>
+                </div>
+
+                <div class="container_button">
+                    <a href="https://github.com/pixel-growth" target="_blank">
+                        <button class="git_button" data-section="home">Github</button>
+                    </a>
+                    <a href="#contacto">
+                        <button class="contact_button" data-section="home">Contacto</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="links">
+                <a href="https://www.tiktok.com/@pixelgrowth.ofc?lang=es-419" target="_blank">
+                    <img src="./assets/images/icon-tiktok.png" alt="Tik Tok" class="icon-linkedin">
+                </a>
+                <a href="https://github.com/pixel-growth" target="_blank">
+                    <img src="./assets/images/icon-github.png" alt="GitHub" class="icon-github">
+                </a>
+                <a href="https://www.instagram.com/pixel_growth.ofc/" target="_blank">
+                    <img src="./assets/images/icon-instagram.png" alt="Instagram" class="icon-instagram">
+                </a>
+            </div>
+        </section> 
+
+
+        <!-- Sobre Nosotros -->
+        <section class="sobrenoso" id="sobrenoso" data-aos="fade-up">
+            <h1 data-section="sobre-nosotros" data-aos="fade-up">Sobre Nosotros</h1>
+        
+            <div class="container_content-sobrenoso" data-aos="fade-right" data-aos-duration="2000">
+                <div class="container_texto-sobrenoso">
+                    <span class="title_sobrenoso">Pixel Growth</span>
+                    <span class="texto_sobrenoso" data-section="sobre-mi">
+                        Somos una empresa creativa dedicada al desarrollo front-end y la gestión publicitaria digital, especializada en ayudar a marcas, emprendedores y negocios a construir una presencia sólida y coherente en el mundo digital.
+                        Nuestro enfoque combina diseño, comunicación y estrategia, con el objetivo de brindar soluciones integrales que hagan crecer tu marca en el entorno digital. Creemos en el poder de una buena imagen y una presencia coherente en todos los canales, y trabajamos contigo para lograrlo.
+                    </span>
+                </div>
+        
+                <picture class="container_image-sobrenoso" data-aos-duration="2000" data-aos="fade-up">
+                    <img class="image_sobrenoso" src="./assets/images/image-sobrenoso.png" alt="Hombre con laptop" loading="lazy">
+                </picture>
+            </div>
+        </section>    
+        
+        <!-- Organización -->
+
+        <section  class="org timeline" id="organizacion" data-aos="fade-up">
+        <h1 data-section="organización" data-aos="fade-up">Organizacion</h1>
+            <div class="org-container">
+            
+                <!-- Tarjeta 1 -->
+            <div class="scene">
+                <div class="card" onclick="toggleFlip(this)">
+                    <div class="card-face card-front cf-1_left" data-aos="zoom-in-left" data-aos-duration="2000">
+                        <img src="assets/images/icon-yosh.png" alt="Imagen 1">
+                        <button class="corner-button bt-mostrar"><p>Yosh Osorio  ></p></button>
+                    </div>
+                    <div class="card-face card-back cf-2_right crd-hdn">
+                        <h2>G. GENERAL </h2>
+                        <p>Dirige y coordina todas las áreas de la empresa.</p>
+                        <button class="corner-button bt-ocultar">Volver</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Tarjeta 2 -->
+            <div class="scene">
+                <div class="card" onclick="toggleFlip(this)">
+                    <div class="card-face card-front cf-1_right" data-aos="zoom-in-right" data-aos-duration="2000">
+                        <img src="assets/images/icon-pablo.png" alt="Imagen 2">
+                        <button class="corner-button bt-mostrar"><p><  Pablo Huaripata</p></button>
+                    </div>
+                    <div class="card-face card-back cf-2_left crd-hdn">
+                        <h2>G. MARKETING </h2>
+                        <p>Diseña y ejecuta estrategias para promocionar productos o servicios.</p>
+                        <button class="corner-button bt-ocultar">Volver</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Tarjeta 3 -->
+            <div class="scene">
+                <div class="card" onclick="toggleFlip(this)">
+                <div class="card-face card-front cf-1_left" data-aos="zoom-in-left" data-aos-duration="2000">
+                    <img src="assets/images/icon-darwin.png" alt="Imagen 3">
+                    <button class="corner-button bt-mostrar"><p>Darwin Cuenca  ></p></button>
+                </div>
+                <div class="card-face card-back cf-2_right crd-hdn">
+                    <h2>G. PRODUCCIÓN </h2>
+                    <p>Supervisa la fabricación eficiente de bienes.</p>
+                    <button class="corner-button bt-ocultar">Volver</button>
+                </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta 4 -->
+            <div class="scene">
+                <div class="card" onclick="toggleFlip(this)">
+                    <div class="card-face card-front cf-1_right" data-aos="zoom-in-right" data-aos-duration="2000">
+                        <img src="assets/images/icon-brayan.png" alt="Imagen 4">
+                        <button class="corner-button bt-mostrar"><p><  Brayan Rojas</p></button>
+                    </div>
+                    <div class="card-face card-back cf-2_left crd-hdn">
+                        <h2>G. FINANZAS </h2>
+                        <p>Administra los recursos económicos y financieros.</p>
+                        <button class="corner-button bt-ocultar">Volver</button>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Tarjeta 5 -->
+            <div class="scene">
+                    <div class="card" onclick="toggleFlip(this)">
+                    <div class="card-face card-front cf-1_left" data-aos="zoom-in-left" data-aos-duration="2000">
+                        <img  class="img-esp" src="assets/images/icon-wini.png" alt="Imagen 5">
+                        <button class="corner-button cb-esp bt-mostrar"><p>Edinson Mendéz  ></p></button>
+                    </div>
+                    <div class="card-face card-back cf-2_right crd-hdn">
+                        <h2>G. LOGÍSTICA </h2>
+                        <p>Controla el flujo de materiales y distribución de productos.</p>
+                    <button class="corner-button bt-ocultar">Volver</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>   
+
+
+        <!-- Habilidades -->
+        <section class="habilidades" id="habilidades" data-aos="fade-up">
+            <h1 data-section="habilidades" data-aos="fade-up" data-aos-duration="2000">Habilidades</h1>
+
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos1-habilidades">
+            <img src="./assets/images/puntos.png" alt="Decoración puntos" class="puntos2-habilidades">
+
+            <div class="cards_container--habilidades">
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="500">
+                    <img src="./assets/images/icon-html.png" alt="HTML">
+                    <p>HTML 5</p>
+                </div>
+                
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                    <img src="./assets/images/icon-css.png" alt="CSS">
+                    <p>CSS 3</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
+                    <img src="assets/images/icon-blogger.png" alt="Blogger">
+                    <p>Blogger</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="500">
+                    <img src="assets/images/icon-wix.png" alt="Tailwind">
+                    <p>Wix</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="700">
+                    <img src="./assets/images/icon-ig.png" alt="Git">
+                    <p>Instagram</p>
+                </div>
+                
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="900">
+                    <img src="./assets/images/icon-github_144.png" alt="GitHub">
+                    <p>Github</p>
+                </div>
+
+                <div class="cards--habilidades" data-aos="fade-up" data-aos-duration="1100">
+                    <img src="./assets/images/icon-tiktok_144.png" alt="Trello">
+                    <p>Tik Tok</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section class="services" id="services" data-aos="fade-up">
+            <h1 data-section="proyectos" data-aos="fade-up">Servicios</h1>
+
+            <img src="./assets/images/puntos.png" class="puntos1-proyectos">
+            <img src="./assets/images/puntos.png" class="puntos2-proyectos">
+
+            <div class="cards_container--services">
+
+                <!-- Servicio 1 -->
+                <div class="cards--services card_portafolio" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                    <div class="container_imgCard--services">
+                        <img src="assets/images/fondo-front-end.png" alt="Proyecto: Portafolio">
+                    </div>
+
+                    <div class="container_textCard--services text-portafolio">
+                        <h2 data-section="proyectos">Sitio Web con Html5 y Css3</h2>
+                        <p data-section="proyectos">Stios web especializados en su interfaz, con herramientas de dessarrollo web, altamente personalizables y al estilo
+                            que quieras. Contactanos.
+                        </p>
+                    </div>
+
+                    <div class="container_btn--services">
+
+                        <a href="mailto:pixelgrowth.ofc@gmail.com" target="_blank">
+                            <button class="btn_repo">
+                                <img src="./assets/images/icon-mail.png" alt="Whastapp">EMAIL
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 2 -->
+                <div class="cards--services card_portafolio" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                    <div class="container_imgCard--services">
+                        <img src="assets/images/fondo-w-b.png" alt="Proyecto: Portafolio">
+                    </div>
+
+                    <div class="container_textCard--services text-portafolio">
+                        <h2 data-section="proyectos">Sitio Web con Wix y Blogger</h2>
+                        <p data-section="proyectos">Diseñamos sitios web funcionales y modernos con Wix y Blogger, ideales para mostrar tu marca, blog o negocio con diseño responsivo, fácil navegación y estilo personalizado.
+                            <br>Contactanos.
+                        </p>
+                    </div>
+
+                    <div class="container_btn--services">
+
+                        <a href="mailto:pixelgrowth.ofc@gmail.com" target="_blank">
+                            <button class="btn_repo">
+                                <img src="./assets/images/icon-mail.png" alt="Whastapp">EMAIL
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 3 -->
+                <div class="cards--services card_portafolio" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                    <div class="container_imgCard--services">
+                        <img src="assets/images/fondo-i-t.png" alt="Proyecto: Portafolio">
+                    </div>
+
+                    <div class="container_textCard--services text-portafolio">
+                        <h2 data-section="proyectos">Publicidad con Instagram y Tik Tok</h2>
+                        <p data-section="proyectos">Creamos contenido publicitario dinámico y visualmente atractivo para TikTok e Instagram, con videos cortos y creativos para captar la atención. 
+                            <br>Contactanos.
+                        </p>
+                    </div>
+
+                    <div class="container_btn--services">
+
+                        <a href="mailto:pixelgrowth.ofc@gmail.com" target="_blank">
+                            <button class="btn_repo">
+                                <img src="./assets/images/icon-mail.png" alt="Whastapp">EMAIL
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+                <!-- Planes y Precios -->
+        <section class="plans" id="plans" data-aos="fade-up">
+            <h1 data-section="proyectos" data-aos="fade-up">Planes y Precios</h1>
+
+            <div class="cards_container--plans">
+
+                <!-- Plan 1 -->
+                <div class="card-start">
+                    <div class="cards--plan cards--plan-left" data-aos="zoom-in-down" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                        <div class="card_plan--tittle-1">HTML + CSS</div>
+                        <div class="card_plan--tittle-2" >  $15.99 </div>
+                        <div class="card_plan--subtittle" > Por Servicio </div>
+                        <div class="container_imgcard--plan">
+                            <img src="assets/images/icon_plan-2.png" alt="Picture card plans">
+                        </div>
+                        <div class="card_plan--carac" > Caracteristica 1 </div>
+                        <div class="card_plan--carac" > Caracteristica 2 </div>
+                        <button class="card_plan--button">Añadir al Carrito</button>
+                    </div>
+                    <div class="parraf-right">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Tempora similique ex sed perferendis at quod nisi beatae quos asperiores, 
+                        atque accusantium suscipit in minus aut sapiente eius totam consequatur magni.</p>
+                    </div>
+                </div>
+
+                <!-- Plan 2 -->
+                <div class="card-end">
+                    <div class="parraf-left">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Tempora similique ex sed perferendis at quod nisi beatae quos asperiores, 
+                        atque accusantium suscipit in minus aut sapiente eius totam consequatur magni.</p>
+                    </div>
+                    <div class="cards--plan cards--plan-right" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                        <div class="card_plan--tittle-1">Wix O Blogger</div>
+                        <div class="card_plan--tittle-2" >  $7.99 </div>
+                        <div class="card_plan--subtittle" > Por Servicio </div>
+                        <div class="container_imgcard--plan">
+                            <img src="assets/images/icon_plan-1.png" alt="Picture card plans">
+                        </div>
+                        <div class="card_plan--carac" > Caracteristica 1 </div>
+                        <div class="card_plan--carac" > Caracteristica 2 </div>
+                        <button class="card_plan--button">Añadir al Carrito</button>
+                    </div>
+                    
+                    
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="card-start">
+                    <div class="cards--plan cards--plan-left" data-aos="zoom-in-down" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                        <div class="card_plan--tittle-1">IG + Tik Tok</div>
+                        <div class="card_plan--tittle-2" >  $11.99 </div>
+                        <div class="card_plan--subtittle" > Por Cantidad </div>
+                        <div class="container_imgcard--plan">
+                            <img src="assets/images/icon_plan-3.png" alt="Picture card plans">
+                        </div>
+                        <div class="card_plan--carac" > Caracteristica 1 </div>
+                        <div class="card_plan--carac" > Caracteristica 2 </div>
+                        <button class="card_plan--button">Añadir al Carrito</button>
+                    </div>
+                    <div class="parraf-right">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Tempora similique ex sed perferendis at quod nisi beatae quos asperiores, 
+                        atque accusantium suscipit in minus aut sapiente eius totam consequatur magni.</p>
+                    </div>
+                </div>
+
+                <!-- Plan 4 -->
+                <div class="card-end">
+                    <div class="parraf-left">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                        Tempora similique ex sed perferendis at quod nisi beatae quos asperiores, 
+                        atque accusantium suscipit in minus aut sapiente eius totam consequatur magni.</p>
+                    </div>
+                    <div class="cards--plan cards--plan-right" data-aos="zoom-in-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+                        <div class="card_plan--tittle-1 ">Paquete Pro</div>
+                        <div class="card_plan--tittle-2" >$24.99</div>
+                        <div class="card_plan--subtittle" >Por Paquete</div>
+                        <div class="container_imgcard--plan">
+                            <img src="assets/images/icon_plan-4.png" alt="Picture card plans">
+                        </div>
+                        <div class="card_plan--carac" > Caracteristica 1 </div>
+                        <div class="card_plan--carac" > Caracteristica 2 </div>
+                        <button class="card_plan--button">Añadir al Carrito</button>
+                    </div>
+
+                </div>
+            </div> 
+        </section>
+
+        <!-- Contacto -->
+        <section class="contacto" id="contacto">
+            <h1 data-section="contacto" data-aos="fade-up">Contacto</h1>
+            
+            <div class="container_box--contacto" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+            
+                <div class="container--contacto">
+                    <div class="container_text--contacto">
+                        <p data-section="contacto">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible.</p>
+                    </div>
+                    
+                    <form id="form" class="form-contact" name="contacto-portafolio" netlify>
+                        <input id="nombre" type="text" name="name" placeholder="Nombre | Name" required>
+                        <input id="email" type="email" name="email" placeholder="E-mail" required>
+                        <input id="asunto" type="text" name="affair" placeholder="Asunto | Subject" required>
+                        <textarea id="mensaje" cols="20" rows="4" name="message" placeholder="Mensaje | Message" required></textarea>
+                        
+                        <div class="btn_form--contacto">
+                            <button id="btn-enviar" type="submit" data-section="contacto">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contianer--footer">
+            <div class="container_redes-footer">
+                </a>
+                <a href="https://github.com/pixel-growth" target="_blank">
+                    <img src="./assets/images/icon-github.png" alt="GitHub">
+                </a>
+                <a href="https://www.tiktok.com/@pixelgrowth.ofc?lang=es-419" target="_blank">
+                    <img src="assets/images/icon-tiktok.png" alt="TikTok">
+                </a>
+                <a href="https://www.instagram.com/pixel_growth.ofc/" target="_blank">
+                    <img src="./assets/images/icon-instagram.png" alt="Instagram"">
+                </a>
+            </div>
+
+            <div class="container_text--footer">
+                <span>Copyright © | Coded with</span>
+                <span>by</span>
+                <span>Pixel Growth</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ASISTENTE IA -->
+
+    <button class="chat-button" onclick="toggleChat()" id="chatToggle">
+        <img src="https://cdn-icons-png.flaticon.com/512/2462/2462719.png" alt="Chat" class="chat-icon" id="chatIcon" />
+    </button>
+
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">Asistente Virtual</div>
+            <div class="chat-messages" id="chatMessages"></div>
+            <div class="chat-options" id="chatOptions"></div>
+            <div class="chat-input">
+            <input type="text" id="chatInput" placeholder="Escribe algo..." />
+            <button onclick="sendMessage()">Enviar</button>
+        </div>
+    </div>
+
+
+    <!-- Archivo Js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
+
+    <!-- Mi script -->
+    <script src="./script.js" defer></script>
+</body>
+</html>
+
+
