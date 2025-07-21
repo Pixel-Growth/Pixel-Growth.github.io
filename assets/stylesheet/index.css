@@ -1107,17 +1107,6 @@ footer {
     .corner-button p {
         font-family: "Skranji";
     }
-
-    .card-back h2::after {
-        content: "|";
-        font-weight: 100;
-        position: absolute;
-        width: 110%;
-        right: -14px;
-        color: var(--jet);
-        background-color: var(--black);
-        animation: typing 3s steps(12) alternate infinite;
-    }
 }
 
 html,
