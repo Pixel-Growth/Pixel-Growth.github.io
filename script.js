@@ -308,11 +308,6 @@ function mostrarProductos() {
     wrapper.appendChild(botonCarrito);
     chatMessages.appendChild(wrapper);
 });
-
-
-        div.appendChild(info);
-        div.appendChild(botonCarrito);
-        chatMessages.appendChild(div);
     };
 
     chatMessages.scrollTop = chatMessages.scrollHeight;
