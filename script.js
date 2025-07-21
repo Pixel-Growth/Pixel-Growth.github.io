@@ -248,9 +248,9 @@ function mostrarOpciones() {
         { texto: "1. Planes y Precios", accion: mostrarProductos },
         { texto: "2. Contacto", accion: solicitarContacto },
         {
-            texto: "3. Envíanos un Gmail",
+            texto: "3. Contáctanos por WhatsApp",
             accion: () =>
-                (window.location.href = "mailto:pixelgrowth.ofc@gmail.com"),
+                window.open("https://wa.me/51973471699", "_blank"),
         },
     ];
 
