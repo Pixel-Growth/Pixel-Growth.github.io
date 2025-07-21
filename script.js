@@ -245,14 +245,14 @@ function mostrarOpciones() {
     chatOptions.style.display = "block";
 
     const opciones = [
-        { texto: "1. Planes y Precios", accion: mostrarProductos },
-        { texto: "2. Contacto", accion: solicitarContacto },
-        {
-            texto: "3. Contáctanos por WhatsApp",
-            accion: () =>
-                window.open("https://wa.me/51973471699", "_blank"),
-        },
-    ];
+    { texto: "1. Planes y Precios", accion: mostrarProductos },
+    { texto: "2. Contacto", accion: solicitarContacto },
+    {
+        texto: "3. Hablar por WhatsApp",
+        accion: () =>
+            window.open("https://wa.me/51973471699?text=Hola,%20quiero%20más%20información", "_blank"),
+    },
+];
 
     opciones.forEach((op) => {
         const btn = document.createElement("button");
