@@ -740,7 +740,7 @@ span + span {
     .card_plan--carac {
         font-family: "Kanit";
         color: var(--crem);
-        font-size: 2rem;
+        font-size: 1.6rem;
         padding: 1.4rem;
     }
 
